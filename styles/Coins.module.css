@@ -1,0 +1,67 @@
+.coins {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+}
+
+.coins div {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgb(53 72 91 / 7%), 0 2px 2px rgb(0 0 0 / 1%),
+    0 4px 4px rgb(0 0 0 / 2%), 0 10px 8px rgb(0 0 0 / 3%),
+    0 15px 15px rgb(0 0 0 / 3%), 0 30px 30px rgb(0 0 0 / 4%),
+    0 70px 65px rgb(0 0 0 / 5%);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+  background: rgb(130, 137, 231);
+  color: var(--white-theme);
+}
+
+.coins div:hover {
+  transform: scale(1.02);
+  background: var(--primary-theme);
+
+  cursor: pointer;
+}
+.coins div > p {
+  margin: 10px;
+}
+
+.coinDiv {
+  margin: 5vw 20vw;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgb(53 72 91 / 7%), 0 2px 2px rgb(0 0 0 / 1%),
+    0 4px 4px rgb(0 0 0 / 2%), 0 10px 8px rgb(0 0 0 / 3%),
+    0 15px 15px rgb(0 0 0 / 3%), 0 30px 30px rgb(0 0 0 / 4%),
+    0 70px 65px rgb(0 0 0 / 5%);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+}
+.coinDiv > div {
+  display: flex;
+  align-items: center;
+}
+.coinDiv > div > img {
+  margin: 20px;
+}
+
+.coinDiv > p {
+  margin: 20px;
+}
+
+@media (max-width: 760px) {
+  .coins {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .coins {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .coinDiv {
+    margin: 3vw 5vw;
+  }
+}

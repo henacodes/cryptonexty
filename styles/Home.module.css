@@ -1,0 +1,72 @@
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.banner > div {
+  display: flex;
+  padding: 0 70px;
+  width: 100%;
+}
+.banner > div > section > img {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+}
+
+.banner > div > section {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner > div > section > div > p:nth-child(2) {
+  font-size: 10vw;
+  color: var(--primary-theme);
+  font-family: PoppinsBold;
+  margin-top: -30px;
+}
+.banner > div > section > div > p:nth-child(1) {
+  font-size: 2vw;
+  color: var(--dark-theme);
+  font-family: PoppinsBold;
+}
+.bannerButton {
+  margin-top: -250px;
+  margin-left: 15vw;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .banner > div {
+    flex-direction: column-reverse;
+  }
+  .banner > div > section > div > p:nth-child(1) {
+    font-size: 3vw;
+    color: var(--dark-theme);
+    font-family: PoppinsBold;
+    margin-bottom: 10px;
+  }
+  .bannerButton {
+    margin-left: 10vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner > div > section > img {
+    width: 300px;
+  }
+  .banner > div > section > div > p:nth-child(1) {
+    font-size: 4vw;
+    color: var(--dark-theme);
+    font-family: PoppinsBold;
+    margin-bottom: 20px;
+  }
+  .bannerButton {
+    margin-left: 0;
+  }
+}

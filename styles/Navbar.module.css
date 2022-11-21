@@ -1,0 +1,28 @@
+@font-face {
+  font-family: PoppinsBold;
+  src: url("./fonts/Poppins-Bold.otf");
+}
+
+.navbar {
+  background: var(--primary-theme);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.brand {
+  font-size: 5vw;
+  font-weight: bolder;
+  font-family: PoppinsBold;
+  color: var(--white-theme);
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+}
+.navList > a {
+  color: var(--white-theme);
+  margin-left: 6vw;
+}

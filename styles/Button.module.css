@@ -1,0 +1,26 @@
+/* button rules*/
+
+.btn-lg {
+  padding: 3px 20px 3px 20px;
+}
+.btn-md {
+  font-size: medium;
+}
+
+.btn-sm {
+  font-size: small;
+}
+.btn-round {
+  border-radius: 20px;
+}
+.btn-primary {
+  background: #ff6d00;
+}
+.btn-secondary {
+  background: none;
+  border: 1px solid #ffffff;
+}
+.btn-secondary:hover {
+  background: #ffffff;
+  color: #ff6d00;
+}
